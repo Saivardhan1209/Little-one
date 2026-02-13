@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Harika 💖</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            height: 100vh;
+            overflow: hidden;
+            color: white;
+        }
+
+        h1 {
+            margin-top: 120px;
+            font-size: 40px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            position: absolute;
+            transition: 0.3s;
+        }
+
+        #yesBtn {
+            background-color: white;
+            color: #ff4d6d;
+            left: 40%;
+            top: 50%;
+        }
+
+        #noBtn {
+            background-color: #333;
+            color: white;
+            left: 55%;
+            top: 50%;
+        }
+
+        #message {
+            display: none;
+            margin-top: 40px;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        #message h2 {
+            font-size: 35px;
+        }
+
+        #message img {
+            width: 250px;
+            border-radius: 15px;
+            margin: 15px;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+
+<h1>Harika, will you be my universe? 🌍✨</h1>
+
+<button id="yesBtn" onclick="showLove()">Yes </button>
+<button id="noBtn" onmouseover="moveButton()">No </button>
+
+<div id="message">
+    <h2>Yes, Thank You My Little One 💖😘</h2>
+
+    <!-- Your Romantic GIFs -->
+    <img src="/image (1).png" alt="Romantic Moment 1">
+    <img src="/image.png" alt="Romantic Moment 2">
+
+    <!-- <div style="font-size:70px;">🥹💞🌹✨</div> -->
+    <h1>I LOVE YOUU ❤️</h1>
+</div>
+
+<script>
+    function moveButton() {
+        let button = document.getElementById("noBtn");
+        let x = Math.random() * (window.innerWidth - 100);
+        let y = Math.random() * (window.innerHeight - 100);
+        button.style.left = x + "px";
+        button.style.top = y + "px";
+    }
+
+    function showLove() {
+        document.querySelector("h1").style.display = "none";
+        document.getElementById("yesBtn").style.display = "none";
+        document.getElementById("noBtn").style.display = "none";
+        document.getElementById("message").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
